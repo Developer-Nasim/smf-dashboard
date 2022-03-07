@@ -1,0 +1,284 @@
+.swap-blk {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.swap-blk-corner {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    width: max-content;
+}
+
+.swap-blk-corner > svg {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.swap-blk-corner .swap-blk-wrp {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: #221c67;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.swap-blk-corner:hover .swap-blk-wrp{
+    opacity: 1;
+    visibility: visible;
+}
+.swap-blk-corner .swap-blk-wrp .dts {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.swap-blk-corner .swap-blk-wrp .dts button {
+    border: none;
+    padding: 2px 7px;
+    background: #393477;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 90%;
+    font-weight: 600;
+    color: #fff;
+    transition: .3s;
+}
+.swap-blk-corner .swap-blk-wrp .dts button.active {
+    background: #8b81f1;
+}
+.swap-blk-corner .swap-blk-wrp .dts span.inp {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.swap-blk-corner .swap-blk-wrp .dts span.inp input {
+    width: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    max-height: 25px;
+    font-size: 80%;
+    margin-right: 5px;
+    text-align: center;
+}
+.swap-blk-corner .swap-blk-wrp h5{
+    margin: 0;
+}
+
+.swap-blk-corner .swap-blk-wrp label {
+    margin-top: 8px;
+}
+.swap-blk-corner .swap-blk-wrp .dts button.active {
+    background: #8b81f1;
+}
+
+.swap-menus {
+    padding: 10px;
+    background: #1d1857;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.swap-menus button {
+    padding: 5px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.swap-menus button.active {
+    background: #2f2970;
+}
+.crc-blk {
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 8px;
+}
+
+.crc-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.crc-top button {
+    text-transform: uppercase;
+    background: #1d1857;
+    padding: 5px 6px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    font-size: 85%;
+    margin-right: 10px;
+}
+
+.crc-top button img {
+    min-width: 20px;
+    max-width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    margin-right: 5px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.crc-top button svg {
+    font-size: 20px;
+}
+
+.crc-top button:hover {
+    opacity: .8;
+}
+
+.crc-top input {
+    width: 100%;
+    text-align: right;
+    font-weight: 700;
+}
+
+.crc-bottom p {
+    margin: 0;
+    margin-top: 15px;
+    font-size: 75%;
+    color: #fff;
+}
+
+.crc-bottom p small {
+    color: #978fff;
+    margin-left: 5px;
+}
+p.tlrnc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 80%;
+    color: #978fff;
+    margin: 15px 15px;
+}
+.swap-contents > button.theme-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+.swap-more {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.swap-more li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 80%;
+    margin-top: 2px;
+}
+
+.swap-more li > span {
+    display: flex;
+    align-items: center;
+}
+
+.swap-more li > span > div {
+    position: relative;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.swap-more li > span > div > p {
+    position: absolute;
+    background: #1D1857;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 2;
+    width: 200px;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    pointer-events: none;
+    font-size: 90%;
+    line-height: 18px;
+}
+
+.swap-more li > span > div:hover > p {
+    opacity: 1;
+    visibility: visible;
+    bottom: 5px;
+}
+.smartDex-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.smartDex-bottom .social {
+    display: flex;
+    align-items: center;
+}
+
+.smartDex-bottom .social a {
+    font-size: 22px;
+    margin-right: 10px;
+    transition: .3s;
+}
+
+.smartDex-bottom .social a:hover {
+    opacity: .8;
+}
+.smartDex-bottom > button.theme-btn svg {
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

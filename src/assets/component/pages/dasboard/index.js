@@ -29,11 +29,11 @@ function Dashboard() {
         <div className="dashboard" style={{background: "url("+Backg+")"}}>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-12"> 
+                    {/* <div className="col-lg-12"> 
                         <button type="button" className="goback" onClick={() => navigate(-1)}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 12l9-8v6h15v4h-15v6z"/></svg>
                         </button>
-                    </div>
+                    </div> */}
                     <ContentBlk classes={"col-xl-6 col-lg-12 mb-3"}>
                         <h4>Wallet</h4>
                         <ul className="dlist">

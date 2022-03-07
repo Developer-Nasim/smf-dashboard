@@ -9,8 +9,7 @@ function Header() {
     useEffect(() => { 
         let MenuBtnss = document.querySelectorAll('.mblTgl');
         MenuBtnss.forEach(btn => {
-            btn.addEventListener('click', () => {
-                console.log(btn)
+            btn.addEventListener('click', () => { 
                 document.querySelector('body').classList.toggle('show_menu')
             })
         }) 
@@ -26,7 +25,7 @@ function Header() {
                                 <a className="header-logo" href="#"><img src={Logo} alt="" /></a>
                                 <ul className=" d-none d-xl-flex">
                                     <li><TheButton classes={""} href={"#"} content={"Dashboard"}/></li>
-                                    <li><TheButton classes={""} href={"#"} content={"SmartDex"}/></li>
+                                    <li><TheButton classes={""} href={"smartdex"} content={"SmartDex"}/></li>
                                     <li><TheButton classes={""} href={"#"} content={"SmartStake"}/></li>
                                     <li><TheButton classes={""} href={"antiscamai"} content={"AntiScamAI"}/></li> 
                                     <li><TheButton classes={""} href={"#"} content={"Whales AI"}/></li>
@@ -45,7 +44,7 @@ function Header() {
                 <button type="button" className="mblTgl">X</button>
                 <ul>
                     <li><TheButton classes={""} href={"#"} content={"Dashboard"}/></li>
-                    <li><TheButton classes={""} href={"#"} content={"SmartDex"}/></li>
+                    <li><TheButton classes={""} href={"smartdex"} content={"SmartDex"}/></li>
                     <li><TheButton classes={""} href={"#"} content={"SmartStake"}/></li>
                     <li><TheButton classes={""} href={"antiscamai"} content={"AntiScamAI"}/></li> 
                     <li><TheButton classes={""} href={"#"} content={"WhalesAI"}/></li>

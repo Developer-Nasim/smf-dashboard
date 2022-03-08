@@ -28,7 +28,9 @@ function SmartDex() {
 
     const [ Slippage,setSlippage ] = useState('0.5%');
     const [ SwapMenu,setSwapMenu ] = useState("Swap");
+    const [ SelectTkn,setSelectTkn ] = useState("FA 1.2");
     const [ ShowQr,setShowQr ] = useState(false);
+    const [ ShowTknType,setShowTknType ] = useState(false);
 
 
     return (
@@ -74,7 +76,7 @@ function SmartDex() {
                                 <div className="the_swap"> 
                                     <div className="crc-blk blk_color">
                                         <div className="crc-top">
-                                            <button type="button" data-bs-toggle="modal" data-bs-target="#tokenSelectModal"><img src={XTZ} alt="" /> XTZ <BiChevronDown/></button>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#tokenSelectModal" onClick={() => setShowTknType(false)}><img src={XTZ} alt="" /> XTZ <BiChevronDown/></button>
                                             <input type="number" placeholder="0.0" />
                                         </div>
                                         <div className="crc-bottom">
@@ -83,7 +85,7 @@ function SmartDex() {
                                     </div>    
                                     <div className="crc-blk blk_color">
                                         <div className="crc-top">
-                                            <button type="button" data-bs-toggle="modal" data-bs-target="#tokenSelectModal"><img src={Crunch} alt="" /> crunch <BiChevronDown/></button>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#tokenSelectModal" onClick={() => setShowTknType(false)}><img src={Crunch} alt="" /> crunch <BiChevronDown/></button>
                                             <input type="number" placeholder="0.0" />
                                         </div>
                                         <div className="crc-bottom">
@@ -104,7 +106,7 @@ function SmartDex() {
                                     </div>    
                                     <div className="crc-blk blk_color">
                                         <div className="crc-top">
-                                            <button type="button" data-bs-toggle="modal" data-bs-target="#tokenSelectModal"><img src={Crunch} alt="" /> crunch <BiChevronDown/></button>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#tokenSelectModal" onClick={() => setShowTknType(false)}><img src={Crunch} alt="" /> crunch <BiChevronDown/></button>
                                             <input type="number" placeholder="0.0" />
                                         </div>
                                         <div className="crc-bottom">
@@ -228,91 +230,129 @@ function SmartDex() {
             </div>
         </Modal>
         <Modal ModalName="tokenSelect">
-            <div className="tokenSelect"> 
-                <div className="tokenSelect_head">
-                    <h5>Select a Token</h5>
-                    <button data-bs-dismiss="modal" type="button"><BsXCircleFill/></button>
-                </div> 
-                <input type="text" placeholder="Search name or paste contract address" className="search_now" />
-                <div className="tkn_fp">
-                    <h5>Tokens frequently paired</h5>
-                    <div className="fp_tkn">
-                        <button type="button"><img src={XTZ} alt="" /> XTZ</button>
-                        <button type="button"><img src={XTZ} alt="" /> SMAK</button>
-                        <button type="button"><img src={XTZ} alt="" /> USDtz</button>
-                        <button type="button"><img src={XTZ} alt="" /> BTCtz</button>
-                        <button type="button"><img src={XTZ} alt="" /> ETHtz</button>
-                        <button type="button"><img src={XTZ} alt="" /> KUSD</button>
-                        <button type="button"><img src={XTZ} alt="" /> ctez</button>
+            <div className="tokenSelect blk_color"> 
+                {!ShowTknType ?  
+                    <div className="slct_a_tkn"> 
+                        <div className="tokenSelect_head">
+                            <h5>Select a Token</h5>
+                            <button data-bs-dismiss="modal" type="button"><BsXCircleFill/></button>
+                        </div> 
+                        <input type="text" placeholder="Search name or paste contract address" className="search_now blk_color" />
+                        <div className="tkn_fp">
+                            <h5>Tokens frequently paired</h5>
+                            <div className="fp_tkn">
+                                <button type="button" className="blk_color"><img src={XTZ} alt="" /> XTZ</button>
+                                <button type="button" className="blk_color"><img src={XTZ} alt="" /> SMAK</button>
+                                <button type="button" className="blk_color"><img src={XTZ} alt="" /> USDtz</button>
+                                <button type="button" className="blk_color"><img src={XTZ} alt="" /> BTCtz</button>
+                                <button type="button" className="blk_color"><img src={XTZ} alt="" /> ETHtz</button>
+                                <button type="button" className="blk_color"><img src={XTZ} alt="" /> KUSD</button>
+                                <button type="button" className="blk_color"><img src={XTZ} alt="" /> ctez</button>
+                            </div>
+                        </div>
+                        <ul className="mr_tkns">
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                            <li>
+                                <img src={Umami} alt="" />
+                                <p>EASY <small>CRUNCH</small></p>
+                            </li>
+                        </ul>
+                        <button type="button" className="theme-btn" onClick={() => setShowTknType(true)}>+ Add new token</button> 
                     </div>
-                </div>
-                <ul className="mr_tkns">
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                    <li>
-                        <img src={Umami} alt="" />
-                        <p>EASY <small>CRUNCH</small></p>
-                    </li>
-                </ul>
-                <button type="button" className="theme-btn" data-bs-toggle="modal" data-bs-target="#connectWalletModal">+ Add new token</button> 
+                :
+                    <div className="slct_tkn_typ"> 
+                        <div className="tokenSelect_head">
+                            <h5>Select Token type</h5>
+                            <button onClick={() => setShowTknType(false)} type="button"><BsXCircleFill/></button>
+                        </div>
+                        <div className="selectTypeHere">
+                            <button type="button" onClick={(e) => setSelectTkn(e.target.textContent)} className={SelectTkn == "FA 1.2" ? "active" : ""}>FA 1.2</button>
+                            <button type="button" onClick={(e) => setSelectTkn(e.target.textContent)} className={SelectTkn == "FA 2" ? "active" : ""}>FA 2</button> 
+                        </div>
+                        <div className="infoType blk_color">
+                            <h6>Add token address</h6>
+                            <input type="text" placeholder="KT1c578hd...." className="" />
+                        </div>    
+                        {SelectTkn == "FA 2" ?  
+                            <div className="infoType blk_color">
+                                <h6>Token id</h6>
+                                <input type="number" placeholder="0" className="" />
+                            </div>  
+                        : ""}  
+                        <div className="infoType blk_color">
+                            <h6>Deposit Amount</h6>
+                            <input type="number" placeholder="0.0" className="" />
+                        </div>  
+                        <div className="infoType blk_color">
+                            <h6>You pair</h6>
+                            <div className="pair_wrp">
+                                <button type="button" className="blk_color"><img src={XTZ} alt="" /> XTZ</button>
+                                <input type="number" placeholder="0.0" className="" />
+                            </div>
+                        </div>  
+                        <p><span>Rate</span> <span>1 XTZ = 0 TOKEN</span></p> 
+                        <button type="button" data-bs-dismiss="modal" className="theme-btn" data-bs-toggle="modal" data-bs-target="#connectWalletModal">Connect wallet</button> 
+                    </div>
+                }
             </div>
         </Modal>
         </>

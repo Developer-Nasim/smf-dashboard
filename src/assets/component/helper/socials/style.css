@@ -1,0 +1,49 @@
+.social-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social-bar .social {
+    display: flex;
+    align-items: center;
+}
+
+.social-bar .social a {
+    font-size: 22px;
+    margin-right: 10px;
+    transition: .3s;
+}
+
+.social-bar .social a:hover {
+    opacity: .8;
+}
+.social-bar > button.theme-btn svg {
+    margin-left: 5px;
+}
+
+
+
+@media only screen and (max-width:767px) {
+    .social-bar {
+        justify-content: center;
+    }
+    
+    .social-bar .social {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

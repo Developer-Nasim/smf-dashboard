@@ -1,4 +1,4 @@
-import React,{useEffect,useRef} from "react";
+import React,{useEffect} from "react";
 import "./style.css"
 import Logo from "../../imgs/logo.png"
 import CircleLogo from "../../imgs/circleLogo.png"
@@ -22,17 +22,17 @@ function Header() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="header-wrp">
-                                <a className="header-logo" href="#"><img src={Logo} alt="" /></a>
+                                <a className="header-logo" href="/"><img src={Logo} alt="" /></a>
                                 <ul className=" d-none d-xl-flex">
                                     <li><TheButton classes={""} href={"#"} content={"Dashboard"}/></li>
                                     <li><TheButton classes={""} href={"smartdex"} content={"SmartDex"}/></li>
-                                    <li><TheButton classes={""} href={"#"} content={"SmartStake"}/></li>
+                                    <li><TheButton classes={""} href={"smartstack"} content={"SmartStake"}/></li>
                                     <li><TheButton classes={""} href={"antiscamai"} content={"AntiScamAI"}/></li> 
                                     <li><TheButton classes={""} href={"#"} content={"Whales AI"}/></li>
                                     <li><TheButton classes={""} href={"#"} content={"TradingBotAI"}/></li>
                                 </ul>
                                 <div className="connectWallet">
-                                    <TheButton classes={"cnctWlt d-none d-xl-block"} href={"#"} content={<><img src={CircleLogo} alt="" /> Connect Wallet</>}/> 
+                                    <button className={"theme-btn cnctWlt d-none d-xl-block"} data-bs-toggle="modal" data-bs-target="#connectWalletModal"><img src={CircleLogo} alt="" /> Connect Wallet</button> 
                                     <button type="button" className="mblTgl d-block d-xl-none"></button>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@ function Header() {
                 <ul>
                     <li><TheButton classes={""} href={"#"} content={"Dashboard"}/></li>
                     <li><TheButton classes={""} href={"smartdex"} content={"SmartDex"}/></li>
-                    <li><TheButton classes={""} href={"#"} content={"SmartStake"}/></li>
+                    <li><TheButton classes={""} href={"smartstack"} content={"SmartStake"}/></li>
                     <li><TheButton classes={""} href={"antiscamai"} content={"AntiScamAI"}/></li> 
                     <li><TheButton classes={""} href={"#"} content={"WhalesAI"}/></li>
                     <li><TheButton classes={""} href={"#"} content={"TradingBotAI"}/></li>

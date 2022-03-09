@@ -1,0 +1,212 @@
+.smakMnu {
+    padding: 10px;
+    background: #1d1857;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.smakMnu button {
+    padding: 5px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.smakMnu button.active {
+    background: #2f2970;
+}
+
+.apr_cnt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.apr_cnt > div {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+
+.apr_cnt > div img {
+    width: 22px;
+    margin-right: 10px;
+}
+
+.apr_cnt > span {
+    padding: 5px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .3s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.apr_cnt > span:hover {
+    color: #fff;
+}
+
+
+.stack-smak p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 90%;
+    margin: 0;
+}
+
+.stack-smak > p > span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.stack-smak label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 8px 0;
+}
+.stack-smak label input {
+    width: 100%;
+    padding-right: 10px;
+    height: 100%;
+}
+.stack-smak > button.theme-btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+.stack-smak {
+    padding: 15px;
+    border-radius: 10px;
+} 
+.stkDtl {
+    padding: 15px;
+    border-radius: 10px;
+}
+.rnkDtl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.rnkDtlBlk {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    text-align: center; 
+}
+.rnkDtl li h5 {
+    margin: 0;
+}
+.rnkDtl li.mdlBlk {
+    border-left: 1px solid #ffffff0f;
+    border-right: 1px solid #ffffff0f;
+    padding: 0 70px;
+}
+.rnkDtlBlk > li {
+    width: 32%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.rnkDtlBlk > li > button {
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.rnkDtlBlk > li svg {
+    display: block;
+    margin: auto;
+    font-size: 60px;
+}
+h4.dsh_ttl span {
+    display: inline-block;
+    margin-left: 10px;
+    color: #d2d2d2;
+}
+.stk_blk {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.stk_blk h5 {
+    margin: 0;
+}
+.stkCnt {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.stkCnt h5 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+.stkCnt ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+@media only screen and (max-width:676px) {
+    .rnkDtl {
+        flex-wrap: wrap;
+    }
+    
+    .rnkDtl li.mdlBlk {
+        padding: 20px 0;
+        margin: 20px 0;
+        border: none;
+        border-top: 1px solid #ffffff0f;
+        border-bottom: 1px solid #ffffff0f;
+    }
+    
+    .rnkDtl li {
+        width: 100%;
+    }
+    ul.rnkDtlBlk {
+        flex-wrap: wrap;
+    }
+    .rnkDtlBlk > li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .dsh_ttl {
+        font-size: 19px;
+    }
+    .stack-smak p { 
+        font-size: 73%; 
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+

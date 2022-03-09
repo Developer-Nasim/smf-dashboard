@@ -217,30 +217,8 @@ p.tlrnc {
     visibility: visible;
     bottom: 5px;
 }
-.smartDex-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
-.smartDex-bottom .social {
-    display: flex;
-    align-items: center;
-}
 
-.smartDex-bottom .social a {
-    font-size: 22px;
-    margin-right: 10px;
-    transition: .3s;
-}
-
-.smartDex-bottom .social a:hover {
-    opacity: .8;
-}
-.smartDex-bottom > button.theme-btn svg {
-    margin-left: 5px;
-}
 
 
 

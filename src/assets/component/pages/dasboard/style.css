@@ -1,7 +1,7 @@
 .dashboard {
     width: 100%;
-    min-height: 800px;
-    height: 100vh;
+    /* min-height: 800px; */
+    min-height: 100vh;
     position: relative;
     background-size: cover !important; 
     padding-top: 100px;

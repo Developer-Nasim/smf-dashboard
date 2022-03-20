@@ -26,3 +26,81 @@ form.antiScamAiForm button.theme-btn {
     margin: auto;
     margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+.scror_contents {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.scror_contents > div {
+    margin: 0 10px;
+    margin-top: 25px;
+    max-width: 185px;
+}
+.scror_contents > div h3.innerHeading {
+    margin: 0;
+    color: white;
+}
+/* .scror_contents > div:last-child {
+    max-width: 250px;
+} */
+.score-details h3 {
+    text-align: center;
+    margin-top: 40px;
+}
+.score-details {
+    padding-bottom: 20px;
+}
+.scror_contents .progBlk button.theme-btn {
+    transform: rotateY(180deg);
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+div#MoreContentsModal .modal-content {
+    background: #221c56; 
+}
+ 
+div#MoreContentsModal .modal-content .modal-header h5 { 
+    font-weight: 700;
+    font-size: 24px;
+}
+
+div#MoreContentsModal h4 { 
+    text-align: center;
+}
+div#MoreContentsModal .modal-header button.btn-close {
+    outline: none;
+    box-shadow: none;
+    filter: invert(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

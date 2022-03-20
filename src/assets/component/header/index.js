@@ -3,6 +3,7 @@ import "./style.css"
 import Logo from "../../imgs/logo.png"
 import CircleLogo from "../../imgs/circleLogo.png"
 import TheButton from "../helper/button";
+import ConnectWalletModal from "../helper/modal/ConnectWallet";
 
 function Header() { 
 
@@ -49,9 +50,13 @@ function Header() {
                     <li><TheButton classes={""} href={"antiscamai"} content={"AntiScamAI"}/></li> 
                     <li><TheButton classes={""} href={"#"} content={"WhalesAI"}/></li>
                     <li><TheButton classes={""} href={"#"} content={"TradingBotAI"}/></li>
-                    <li><TheButton classes={"cnctWlt"} href={"#"} content={<><img src={CircleLogo} alt="" /> Connect Wallet</>}/></li> 
+                    <li>
+                        <button type="button" data-bs-dismiss="modal" className="theme-btn" data-bs-toggle="modal" data-bs-target="#connectWalletModal"><img src={CircleLogo} alt="" /> Connect Wallet</button>
+                        {/* <TheButton classes={"cnctWlt"} href={"#"} content={<></>}/> */}
+                    </li> 
                 </ul>
             </div>
+            <ConnectWalletModal />
         </>
     )
 }

@@ -137,8 +137,7 @@ function SmartStack() {
                 </div>
             </div> 
         </div>
-
-        <ConnectWalletModal /> 
+ 
         </>
     )
 }

@@ -150,9 +150,7 @@ function SmartDex() {
                 </div>
             </div> 
         </div>
-
-        <ConnectWalletModal />
- 
+  
         <Modal ModalName="tokenSelect">
             <div className="tokenSelect blk_color"> 
                 {!ShowTknType ?  

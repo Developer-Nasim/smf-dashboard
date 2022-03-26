@@ -3,6 +3,8 @@ import "./style.css"
 import Logo from "../../imgs/logo.png"
 import CircleLogo from "../../imgs/circleLogo.png"
 import TheButton from "../helper/button";
+import { NavLink } from "react-router-dom";
+import SocialsBar from "../helper/socials";
 import ConnectWalletModal from "../helper/modal/ConnectWallet";
 
 function Header() { 
@@ -19,7 +21,30 @@ function Header() {
     return (
         <> 
             <div className="header">
-                <div className="container-fluid">
+                <div className="header-wrp">
+                    <a className="header-logo" href="/"><img src={Logo} alt="" /></a>
+                    <ul className=" d-none d-xl-flex">
+                        <li> <NavLink to={"/"} className={"theme-btn"}>Dashboard</NavLink> </li>
+                        <li> <NavLink to={"/smartdex"} className={"theme-btn"}>smartdex</NavLink> </li>
+                        <li> <NavLink to={"/smartstack"} className={"theme-btn"}>smartstack</NavLink> </li>
+                        <li> <NavLink to={"/antiscamai"} className={"theme-btn"}>antiscamai</NavLink> </li>
+                        <li> <NavLink to={"/whalesaI"} className={"theme-btn"}>Whales AI</NavLink> </li>
+                        <li> <NavLink to={"/tradingbotaI"} className={"theme-btn"}>TradingBotAI</NavLink> </li>
+                        <li> <NavLink to={"/docs"} className={"drp_menu theme-btn"}>Docs <span></span></NavLink> 
+                            <ul>
+                                <li><TheButton classes={""} href={"#"} content={"Audit"}/></li>
+                                <li><TheButton classes={""} href={"#"} content={"GitHub"}/></li> 
+                            </ul>
+                        </li>  
+                    </ul>
+                    <div className="connectWallet">
+                        <button className={"theme-btn cnctWlt d-none d-xl-block"} data-bs-toggle="modal" data-bs-target="#connectWalletModal"><img src={CircleLogo} alt="" /> Connect Wallet</button> 
+                        <button type="button" className="mblTgl d-block d-xl-none"></button>
+                    </div>
+
+                    <SocialsBar />
+                </div>
+                {/* <div className="container-fluid">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="header-wrp">
@@ -31,6 +56,12 @@ function Header() {
                                     <li><TheButton classes={""} href={"antiscamai"} content={"AntiScamAI"}/></li> 
                                     <li><TheButton classes={""} href={"#"} content={"Whales AI"}/></li>
                                     <li><TheButton classes={""} href={"#"} content={"TradingBotAI"}/></li>
+                                    <li><TheButton classes={"drp_menu"} href={"#"} content={<>Docs <span></span></>}/>
+                                        <ul>
+                                            <li><TheButton classes={""} href={"#"} content={"Audit"}/></li>
+                                            <li><TheButton classes={""} href={"#"} content={"GitHub"}/></li> 
+                                        </ul>
+                                    </li>
                                 </ul>
                                 <div className="connectWallet">
                                     <button className={"theme-btn cnctWlt d-none d-xl-block"} data-bs-toggle="modal" data-bs-target="#connectWalletModal"><img src={CircleLogo} alt="" /> Connect Wallet</button> 
@@ -39,7 +70,7 @@ function Header() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className="mobileMenu">
                 <button type="button" className="mblTgl">X</button>
@@ -50,6 +81,12 @@ function Header() {
                     <li><TheButton classes={""} href={"antiscamai"} content={"AntiScamAI"}/></li> 
                     <li><TheButton classes={""} href={"#"} content={"WhalesAI"}/></li>
                     <li><TheButton classes={""} href={"#"} content={"TradingBotAI"}/></li>
+                    <li><TheButton classes={""} href={"#"} content={"Docs"}/>
+                        <ul>
+                             <li><TheButton classes={""} href={"#"} content={"Audit"}/></li>
+                             <li><TheButton classes={""} href={"#"} content={"GitHub"}/></li> 
+                        </ul>
+                    </li>
                     <li>
                         <button type="button" data-bs-dismiss="modal" className="theme-btn" data-bs-toggle="modal" data-bs-target="#connectWalletModal"><img src={CircleLogo} alt="" /> Connect Wallet</button>
                         {/* <TheButton classes={"cnctWlt"} href={"#"} content={<></>}/> */}

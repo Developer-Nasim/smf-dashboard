@@ -12,8 +12,7 @@ import ProgressProvider from "./ProgressProvide";
 function AntiScamAi() { 
     const [valueEnd, setValueEnd]           = useState(46);
     const [ClickAbleScan, setClickAbleScan] = useState(false);
-    const [showDetails, setshowDetails]     = useState(false);
-    const [showMoreDetails, setshowMoreDetails] = useState(false);
+    const [showDetails, setshowDetails]     = useState(false); 
     const [ datas,setDatas ]                    = useState({
         name:"",
         url:"",

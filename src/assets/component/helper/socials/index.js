@@ -14,7 +14,7 @@ function SocialsBar() {
                 <Link to="/" ><BsTelegram/></Link>
                 <Link to="/" ><BsTwitter/></Link> 
             </div>
-            <TheButton classes={""} href={"#"} content={<>Have questions?<BsBoxArrowInUpRight/></>}/>  
+            {/* <TheButton classes={""} href={"#"} content={<>Have questions?<BsBoxArrowInUpRight/></>}/>   */}
         </div>
     )
 }

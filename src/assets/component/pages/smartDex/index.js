@@ -142,12 +142,7 @@ function SmartDex() {
                             }
                         </div>
                     </div>  
-                </div>
-                <div className="row">
-                    <div className="col-lg-8 offset-lg-4  mt-4">
-                        <SocialsBar /> 
-                    </div>
-                </div>
+                </div> 
             </div> 
         </div>
   

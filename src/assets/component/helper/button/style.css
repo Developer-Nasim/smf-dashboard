@@ -1,6 +1,7 @@
-button.theme-btn {
+.theme-btn {
     border: none;
     outline: none;
+    display: block;
     background-color: transparent;
     transition: .3s;
     color: #fff;
@@ -8,7 +9,7 @@ button.theme-btn {
     z-index: 2;
     padding: 5px 15px;
 }
-button.theme-btn:after {
+.theme-btn:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -26,8 +27,7 @@ button.theme-btn:after {
     border-image-slice: 20;
     z-index: -2;
 }
-
-button.theme-btn:before {
+.theme-btn:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -40,9 +40,7 @@ button.theme-btn:before {
     opacity: 0;
     transition: .3s;
 }
-
-
-button.theme-btn:hover:before{
+.theme-btn:hover:before{
     opacity: 1;
 }
 

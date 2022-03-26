@@ -129,12 +129,7 @@ function SmartStack() {
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div className="row"> 
-                    <div className="col-lg-12 mt-4">
-                        <SocialsBar /> 
-                    </div>
-                </div>
+                </div> 
             </div> 
         </div>
  

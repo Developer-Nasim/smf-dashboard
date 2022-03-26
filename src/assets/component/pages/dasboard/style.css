@@ -4,8 +4,8 @@
     min-height: 100vh;
     position: relative;
     background-size: cover !important; 
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 .dlist {
     font-size: 15px;
@@ -130,8 +130,24 @@ button.goback:hover {
     height: 30px;
     margin: 5px 0;
 }
+.dasboard_contents_here {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+} 
+.dashboard .container {
+    max-width: 100%;
+    padding: 0 30px;
+}
+.dasboard_contents_here .header {
+    width: 300px;
+    overflow: hidden;
+    position: unset;
+}
 
-
+.dasboard_contents_here .the_contents {
+    width: 100%;
+}
 
 
 

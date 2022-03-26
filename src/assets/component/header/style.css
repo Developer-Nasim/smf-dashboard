@@ -1,24 +1,27 @@
 .header {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
-    width: 100%;
+    width: 300px;
+    padding: 30px 20px;
+    box-shadow: inset 0px -2px 7px rgb(255 255 255 / 25%);
     z-index: 9;
 }
 
 .header-wrp {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 .header-wrp ul {
-    display: flex;
+    display: block !important;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
-    background: rgba(45, 38, 138, 0.3);
-    box-shadow: inset 0px -2px 7px rgb(255 255 255 / 25%);
+    /* background: rgba(45, 38, 138, 0.3); */
+    /* box-shadow: inset 0px -2px 7px rgb(255 255 255 / 25%); */
     border-radius: 0px 0px 10px 10px;
-    padding: 8px 40px;
+    /* padding: 8px 40px; */
 }
 .header-wrp a.header-logo,
 .header-wrp .connectWallet {
@@ -26,13 +29,25 @@
 }
 .header-wrp .connectWallet { 
     text-align: right;
-    background: rgba(45, 38, 138, 0.3);
-    box-shadow: inset 1px -2px 7px rgb(255 255 255 / 25%);
+    /* background: rgba(45, 38, 138, 0.3); */
+    /* box-shadow: inset 1px -2px 7px rgb(255 255 255 / 25%); */
     border-radius: 0px 0px 0px 10px;
-    padding: 8px 15px;
+    /* padding: 8px 15px; */
+    width: 100%;
+    margin-top: 20px;
+}
+.header-wrp .connectWallet button.theme-btn {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+}
+.dasboard_contents_here .header a.header-logo {
+    margin-bottom: 20px;
+    display: block;
 }
 .header-wrp ul li {
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    position: relative;
 }
 .header-wrp ul li:last-child {
     margin-right: 0px;
@@ -109,6 +124,74 @@
 .show_menu .mobileMenu {
     margin-left: 0;
 }
+.header-wrp ul li ul {
+    position: absolute;
+    right: 0;
+    background: #312d66;
+    top: 40px;
+    box-shadow: 0px -2px 7px rgb(255 255 255 / 25%);
+    z-index: 2;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    transition: .3s;
+    padding: 0;
+}
+.header-wrp ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+.header-wrp ul li ul li {
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+.header-wrp .social-bar {
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.header-wrp ul li ul li button {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+} 
+.theme-btn.drp_menu span {
+    display: inline-block;
+    border-top: 2px solid #69c8f0;
+    border-right: 2px solid #69c8f0;
+    width: 8px;
+    height: 8px;
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+    margin-left: 5px;
+    transition: .3s;
+}
+.header-wrp ul li:hover .theme-btn.drp_menu span {
+    transform: rotate(-45deg);
+    top: 0; 
+    border-color: #fff;
+}
+
+.header-wrp ul li a {
+    text-transform: capitalize;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.header-wrp ul li .theme-btn[aria-current="page"]:before{
+    opacity: 1;
+}
+
+
+
 @media only screen and (max-width:1440px) and (min-width:1200px) {
     .header-wrp ul { 
         padding: 8px 20px;

@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import TheButton from "../../helper/button";
 import ChartComponent from "../../helper/chart"
 import DemoStock from "../../helper/chart/stock"
+import SocialsBar from "../../helper/socials";
 import WhitePaper from "../../../imgs/whitepaper.png";
 import Audits from "../../../imgs/audits.png";
 import Github from "../../../imgs/github.png";
@@ -128,9 +129,9 @@ function Dashboard() {
                         <p>Our Dual Reward system designed to let you benefit from Tax USDT reflection even with your SMF staked.</p>
                         <button type="button" className="gotothatPage" onClick={() => navigate("#")}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 12l9-8v6h15v4h-15v6z"/></svg></button>
                     </ContentBlk> 
-                    <ContentBlk classes={"col-lg-12"}>
+                    <ContentBlk classes={"col-lg-12 d-none"}>
                         <div className="help_center"> 
-                            <h4>Support Center</h4>
+                            <h4>Docs</h4>
                             <ul>
                                 <IconBlk href="#" img={WhitePaper} classes=""/> 
                                 <IconBlk href="#" img={Audits} classes=""/> 

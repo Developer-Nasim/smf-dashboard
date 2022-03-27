@@ -9,7 +9,8 @@ form.antiScamAiForm label input {
     display: block;
     width: 100%;
     background: rgba(45, 38, 138, 0.3);
-    box-shadow: inset 0px 0px 7px rgb(255 255 255 / 25%);
+    -webkit-box-shadow: inset 0px 0px 7px rgb(255 255 255 / 25%);
+            box-shadow: inset 0px 0px 7px rgb(255 255 255 / 25%);
     border-radius: 5px;
     border: none;
     padding: 5px 10px;
@@ -37,10 +38,15 @@ form.antiScamAiForm button.theme-btn {
 
 
 .scror_contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-bottom: 20px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 30px;
 }
 
@@ -64,7 +70,8 @@ form.antiScamAiForm button.theme-btn {
     padding-bottom: 20px;
 }
 .scror_contents .progBlk button.theme-btn {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
     display: block;
     margin: auto;
     margin-top: 15px;
@@ -83,10 +90,11 @@ div#MoreContentsModal h4 {
 }
 div#MoreContentsModal .modal-header button.btn-close {
     outline: none;
-    box-shadow: none;
-    filter: invert(1);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-filter: invert(1);
+            filter: invert(1);
 }
-
 
 
 

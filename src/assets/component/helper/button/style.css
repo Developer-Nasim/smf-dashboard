@@ -3,6 +3,8 @@
     outline: none;
     display: block;
     background-color: transparent;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     color: #fff;
     position: relative;
@@ -18,7 +20,12 @@
     left: 0;
     border-radius:5px; /*1*/
     border:1px solid transparent; /*2*/
+    background:-webkit-gradient(linear, right top, left top, from(#6ac9f1), to(#234a55)) border-box;
+    background:-o-linear-gradient(right, #6ac9f1, #234a55) border-box;
     background:linear-gradient(270deg, #6ac9f1, #234a55) border-box;
+    -webkit-mask: /*4*/
+       -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) padding-box, 
+       -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
     -webkit-mask: /*4*/
        linear-gradient(#fff 0 0) padding-box, 
        linear-gradient(#fff 0 0);
@@ -35,15 +42,18 @@
     top: 0;
     left: 0;
     border-radius:5px;
+    background: -webkit-gradient(linear, right top, left top, from(#6AC9F1), to(#231E5B));
+    background: -o-linear-gradient(right, #6AC9F1 0%, #231E5B 100%);
     background: linear-gradient(270deg, #6AC9F1 0%, #231E5B 100%);
     z-index: -1;
     opacity: 0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 .theme-btn:hover:before{
     opacity: 1;
 }
-
 
 
 

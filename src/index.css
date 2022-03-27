@@ -19,6 +19,8 @@ body:after {
   top: 0;
   left: 0;
   z-index: 10;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
   opacity: 0;
   visibility: hidden;
@@ -48,6 +50,8 @@ a {
 }
 
 a:hover{ 
+  -webkit-transition: .3s; 
+  -o-transition: .3s; 
   transition: .3s;
 }
 a,
@@ -117,7 +121,10 @@ ul{
 } 
 .blk_color {
   background: rgba(45, 38, 138, 0.3);
-  box-shadow: inset 0px 0px 7px rgb(255 255 255 / 25%);  
+  -webkit-box-shadow: inset 0px 0px 7px rgb(255 255 255 / 25%);
+          box-shadow: inset 0px 0px 7px rgb(255 255 255 / 25%);  
+  -webkit-transition: .3s;  
+  -o-transition: .3s;  
   transition: .3s;
 }
 .blk_color:hover{    
@@ -148,7 +155,6 @@ button.theme-btn.diasbled {
   opacity: .6;
   pointer-events: none;
 }
-
 
 
 

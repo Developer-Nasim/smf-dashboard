@@ -12,6 +12,8 @@
     padding-left: 10px;
 }
 .dlist li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     line-height: 24px;
 }
@@ -25,8 +27,12 @@
 .smf-data h5 {
     font-weight: 300;
     font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .smf-data h5 img {
@@ -37,17 +43,24 @@
     margin-left: 10px;
 }
 .help_center ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 70px;
     height: 70px;
     border: 1px solid #5f56bb;
     margin-right: 10px;
     background: rgba(45, 38, 138, 0.5);
-    box-shadow: inset 0px 0px 7px rgb(255 255 255 / 25%);
+    -webkit-box-shadow: inset 0px 0px 7px rgb(255 255 255 / 25%);
+            box-shadow: inset 0px 0px 7px rgb(255 255 255 / 25%);
     border-radius: 10px;
     margin-top: 10px;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: pointer;
 }
 .help_center ul li img {
@@ -64,12 +77,17 @@ button.goback {
     height: 40px;
     border-radius: 10px;
     background: rgba(45, 38, 138, 0.3);
-    box-shadow: inset 0px 0px 7px rgb(255 255 255 / 25%);
+    -webkit-box-shadow: inset 0px 0px 7px rgb(255 255 255 / 25%);
+            box-shadow: inset 0px 0px 7px rgb(255 255 255 / 25%);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 } 
 
 button.goback svg path {
     fill: #DDDDFB;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
@@ -85,7 +103,9 @@ button.goback:hover {
     top: 60%;
     right: 15px;
     width: 95px;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .contentBlk .btns button.theme-btn {
@@ -96,10 +116,15 @@ button.goback:hover {
     margin-top: 5px;
 }
 .help_center ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .smf-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .smf-data-right > div > label,.smf-data-right > div > select {
@@ -111,10 +136,14 @@ button.goback:hover {
 .a_days {
     display: block;
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 0;
-    transform: translateY(-50%);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 77.84%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    /* background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.2)), color-stop(77.84%, rgba(255, 255, 255, 0)));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 77.84%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 77.84%); */
     border-radius: 10px;
     padding: 10px 7px;
 }
@@ -122,15 +151,20 @@ button.goback:hover {
 .a_days button {
     display: block;
     border: none;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.2)), color-stop(87.89%, rgba(255, 255, 255, 0)));
+    background: -o-linear-gradient(right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 87.89%);
     background: linear-gradient(270deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 87.89%);
     border-radius: 5px;
     text-transform: uppercase;
     padding: 0;
     width: 30px;
+    font-size: 14px;
     height: 30px;
     margin: 5px 0;
 }
 .dasboard_contents_here {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     min-height: 100vh;
@@ -167,7 +201,11 @@ button.goback:hover {
     .contentBlk .btns {
         position: unset;
         width: 90%;
-        transform: unset;
+        -webkit-transform: unset;
+            -ms-transform: unset;
+                transform: unset;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex; 
         margin: auto;
         margin-top: 15px;
@@ -184,6 +222,8 @@ button.goback:hover {
         width: 130px; 
     }
     .dlist li { 
+        display: -webkit-box; 
+        display: -ms-flexbox; 
         display: flex;
         overflow: hidden;
     }
@@ -221,7 +261,6 @@ button.goback:hover {
 
 
 }
-
 
 
 

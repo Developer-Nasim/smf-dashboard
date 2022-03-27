@@ -145,7 +145,7 @@ button.goback:hover {
     background: -o-linear-gradient(left, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 77.84%);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 77.84%); */
     border-radius: 10px;
-    padding: 10px 7px;
+    padding-right: 15px;
 }
 
 .a_days button {
@@ -160,7 +160,7 @@ button.goback:hover {
     width: 30px;
     font-size: 14px;
     height: 30px;
-    margin: 5px 0;
+    margin: 15px 0;
 }
 .dasboard_contents_here {
     display: -webkit-box;

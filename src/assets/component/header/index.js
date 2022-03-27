@@ -32,6 +32,7 @@ function Header() {
                         <li> <NavLink to={"/tradingbotaI"} className={""}>TradingBotAI</NavLink> </li>
                         <li> <NavLink to={"/docs"} className={"drp_menu"}>Docs <span></span></NavLink> 
                             <ul>
+                                <li> <NavLink to={"/#"} className={""}>Whitepaper</NavLink> </li>
                                 <li> <NavLink to={"/#"} className={""}>Audit</NavLink> </li>
                                 <li> <NavLink to={"/#"} className={""}>GitHub</NavLink> </li>
                                 {/* <li><TheButton classes={""} href={"#"} content={""}/></li>

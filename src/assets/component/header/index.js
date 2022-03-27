@@ -24,16 +24,18 @@ function Header() {
                 <div className="header-wrp">
                     <a className="header-logo" href="/"><img src={Logo} alt="" /></a>
                     <ul className=" d-none d-xl-flex">
-                        <li> <NavLink to={"/"} className={"theme-btn"}>Dashboard</NavLink> </li>
-                        <li> <NavLink to={"/smartdex"} className={"theme-btn"}>smartdex</NavLink> </li>
-                        <li> <NavLink to={"/smartstack"} className={"theme-btn"}>smartstack</NavLink> </li>
-                        <li> <NavLink to={"/antiscamai"} className={"theme-btn"}>antiscamai</NavLink> </li>
-                        <li> <NavLink to={"/whalesaI"} className={"theme-btn"}>Whales AI</NavLink> </li>
-                        <li> <NavLink to={"/tradingbotaI"} className={"theme-btn"}>TradingBotAI</NavLink> </li>
-                        <li> <NavLink to={"/docs"} className={"drp_menu theme-btn"}>Docs <span></span></NavLink> 
+                        <li> <NavLink to={"/"} className={""}>Dashboard</NavLink> </li>
+                        <li> <NavLink to={"/smartdex"} className={""}>smartdex</NavLink> </li>
+                        <li> <NavLink to={"/smartstack"} className={""}>smartstack</NavLink> </li>
+                        <li> <NavLink to={"/antiscamai"} className={""}>antiscamai</NavLink> </li>
+                        <li> <NavLink to={"/whalesaI"} className={""}>Whales AI</NavLink> </li>
+                        <li> <NavLink to={"/tradingbotaI"} className={""}>TradingBotAI</NavLink> </li>
+                        <li> <NavLink to={"/docs"} className={"drp_menu"}>Docs <span></span></NavLink> 
                             <ul>
-                                <li><TheButton classes={""} href={"#"} content={"Audit"}/></li>
-                                <li><TheButton classes={""} href={"#"} content={"GitHub"}/></li> 
+                                <li> <NavLink to={"/#"} className={""}>Audit</NavLink> </li>
+                                <li> <NavLink to={"/#"} className={""}>GitHub</NavLink> </li>
+                                {/* <li><TheButton classes={""} href={"#"} content={""}/></li>
+                                <li><TheButton classes={""} href={"#"} content={""}/></li>  */}
                             </ul>
                         </li>  
                     </ul>

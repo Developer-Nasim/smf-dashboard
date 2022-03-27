@@ -25,10 +25,10 @@ function Header() {
                     <a className="header-logo" href="/"><img src={Logo} alt="" /></a>
                     <ul className=" d-none d-xl-flex">
                         <li> <NavLink to={"/"} className={""}>Dashboard</NavLink> </li>
-                        <li> <NavLink to={"/smartdex"} className={""}>smartdex</NavLink> </li>
-                        <li> <NavLink to={"/smartstack"} className={""}>smartstack</NavLink> </li>
-                        <li> <NavLink to={"/antiscamai"} className={""}>antiscamai</NavLink> </li>
-                        <li> <NavLink to={"/whalesaI"} className={""}>Whales AI</NavLink> </li>
+                        <li> <NavLink to={"/smartdex"} className={""}>SmartDEX</NavLink> </li>
+                        <li> <NavLink to={"/smartstack"} className={""}>SmartStake</NavLink> </li>
+                        <li> <NavLink to={"/antiscamai"} className={""}>AntiScamAI</NavLink> </li>
+                        <li> <NavLink to={"/whalesaI"} className={""}>WhaleTrackerAI</NavLink> </li>
                         <li> <NavLink to={"/tradingbotaI"} className={""}>TradingBotAI</NavLink> </li>
                         <li> <NavLink to={"/docs"} className={"drp_menu"}>Docs <span></span></NavLink> 
                             <ul>

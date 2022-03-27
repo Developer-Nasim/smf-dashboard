@@ -135,7 +135,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 20px;
+    padding: 14px 20px;
     border-radius: 10px;
     text-align: center;
     margin-top: 15px;
